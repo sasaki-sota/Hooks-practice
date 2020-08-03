@@ -15,3 +15,11 @@
 また中に関数を記述することも可能  
 `const increment = () => setHoge(previousHoge => previousHoge + 1)`  
 と表す。
+
+### stateのみでの書き方
+**setStateを書きたいとき**
+`const [state, setState] = useState(props)`  
+props = オブジェクトで入っている  
+`const {name, price} = state`  
+と記述することで
+**{state.name} => {name}に短縮することができるようになる**
