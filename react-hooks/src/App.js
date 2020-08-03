@@ -1,44 +1,32 @@
 import React, { useState } from 'react';
 
-const App =() => {
+const App = (props) => {
 
-    //0が初期値となる
-    const [count, setCount] = useState(0)
+    const [name, setName] = useState(props.name);
+    const [price, setPrice] = useState(props.price);
 
-    // countで0 setCountで関数が返ってくる
-    // console.log({count});
-    // console.log({setCount});
+    const reset = () => {
+        setPrice(props.price)
+        setName(props.name)
+    }
 
-    const increment = () => setCount(count + 1);
-    const decrement = () => setCount(count - 1);
+    return (
+        <React.Fragment>
+            <p>現在の{name}は、{price}円です。</p>
+            <button onClick={() => setPrice(price + 1)}>+1</button>
+            <button onClick={() => setPrice(price - 1)}>-1</button>
+            <button onClick={reset}>reset</button>
 
-    const increment2 = () => setCount(previousCount => previousCount + 1)
-    const decrement2 = () => setCount(previousCount => previousCount - 1)
-    const reset = () => setCount(0);
+            {/*target.value = onChangeが発動するときのinputの文字*/}
+            <input type="text" value={name} onChange={event => setName(event.target.value)}/>
+        </React.Fragment>
+    )
+};
 
-    const double = () => setCount(count * 2);
-    const half3 = () => setCount(previousCount => {
-        return previousCount % 3 === 0 ? previousCount / 3 : previousCount
-    });
-
-  return (
-      <React.Fragment>
-          <div>count: {count}</div>
-          <button onClick={increment}>+1</button>
-          <button onClick={decrement}>-1</button>
-          <div>
-              <button onClick={increment2}>+1</button>
-              <button onClick={decrement2}>-1</button>
-          </div>
-          <div>
-              <button onClick={reset}>reset</button>
-          </div>
-          <div>
-              <button onClick={double}>x2</button>
-              <button onClick={half3}>3のときだけ割る</button>
-          </div>
-      </React.Fragment>
-  );
+// Appのpropsの値
+App.defaultProps = {
+    name: '',
+    price: 1000
 }
 
 export default App;
