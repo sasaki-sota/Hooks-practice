@@ -22,7 +22,7 @@
 props = オブジェクトで入っている  
 `const {name, price} = state`  
 と記述することで  
-**{state.name} => {name}に短縮することができるようになる**
+**{state.name} => {name}に短縮することができるようになる**  
 
 # useEffectについて
 **jsxのレンダリングの後に呼び出される**  
