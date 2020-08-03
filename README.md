@@ -23,3 +23,16 @@ props = オブジェクトで入っている
 `const {name, price} = state`  
 と記述することで  
 **{state.name} => {name}に短縮することができるようになる**
+
+#useEffectについて
+**jsxのレンダリングの後に呼び出される**  
+##### 基本的な記述の仕方
+	useEffect(() => {  
+	        console.log('This is like componentDidMount')  
+	    }, []);  
+となる。
+##### 名前の場合のみ起動させたいとき
+	useEffect(() => {  
+	        console.log('This callback is name only')  
+	    }, [name]);  
+と**第二引数を設定することで実行することができるようになる**
