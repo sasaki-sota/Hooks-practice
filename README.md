@@ -17,9 +17,9 @@
 と表す。
 
 ### stateのみでの書き方
-**setStateを書きたいとき**
+**setStateを書きたいとき**  
 `const [state, setState] = useState(props)`  
 props = オブジェクトで入っている  
 `const {name, price} = state`  
-と記述することで
+と記述することで  
 **{state.name} => {name}に短縮することができるようになる**
