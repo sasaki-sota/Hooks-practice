@@ -29,3 +29,20 @@ srcの中にreducersというフォルダを作成
 	type: ここでswitch文で利用するタイプを記述する必要がある  
 	}  
 
+## mapメソッド
+	state.map((event, index) => (
+        	                <tr key={index}>
+                	            <td>{event.id}</td>
+                        	    <td>{event.title}</td>
+                         	   <td>{event.body}</td>
+                           	 <td><button type='button' className='btn btn-danger'>削除</button></td>
+                      	  </tr>
+                  	  ))  
+とあったときにindexは**配列要素の数値インデックス**とユニークな数値となる
+
+## filterメソッド
+	var manyHoge = ['souta','sasaki','overlade','very','cool','beautiful]  
+	const result  = manyHoge.filter(hoge => hoge.length > 6)  
+	上記のように配列の文字が6文字以上のものに絞る  
+	console.log(result)  
+**配列の中身を限定できるようになる。**  
