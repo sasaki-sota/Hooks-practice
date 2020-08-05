@@ -45,4 +45,14 @@ srcの中にreducersというフォルダを作成
 	const result  = manyHoge.filter(hoge => hoge.length > 6)  
 	上記のように配列の文字が6文字以上のものに絞る  
 	console.log(result)  
-**配列の中身を限定できるようになる。**  
+**配列の中身を限定できるようになる。** 
+#### disablead属性
+この属性を設定するとボタンの反応が無効化される  
+**真偽値を設定すること入力していないでクリックするのを防ぐことができるようになる**  
+`const unCreatable = title === '' || body === ''`  
+タイトルかボディーどちらかがからである  
+
+#### comfirm属性の応用
+`const result = window.confirm('注意書き')`  
+と記述することで削除の前にワンクッション作れる(**めっちゃ便利**)  
+
