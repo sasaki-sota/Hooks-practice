@@ -6,7 +6,7 @@ srcの中にreducersというフォルダを作成
 	switch (action.type) {  
 	case 'CREATE_HOGE':  
 	その時に実行される処理を記述~  
-	defalt:
+	defalt:  
 	どれも当てはまらないときの処理  
 
 ### actionの中身
