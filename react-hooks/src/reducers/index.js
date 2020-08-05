@@ -1,5 +1,3 @@
-import React from 'react';
-
 // []は未定義だった場合に適用
 const events = (state = [], action) => {
     switch (action.type) {
