@@ -9,7 +9,7 @@ srcの中にreducersというフォルダを作成
 **inputタグにはvalueを与えることが多い**  
 `<input className="form-control" id="formEventTitle" value={title} onChange={e => setTitle(e.target.value)} />`  
 **引数.target.value**を記述することで状態変化をすることができるようになる  
-dispatchを記述することでreducer側のactionに引数を渡す
+##### dispatchを記述することでreducer側のactionに引数を渡す
 	dispatch({  
 	type: CREATE_HOGE,  
 	title,  
