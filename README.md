@@ -2,12 +2,12 @@
 srcの中にreducersというフォルダを作成  
 ## reducerについて
 **基本的な書き方**  
-	const hoge = (state, action) => {  
-	switch (action.type) {  
-	case'CREATE_HOGE':  
-	その時に実行される処理を記述~  
-	default: どれケースにも当てはまらないときの処理  
-	}}
+	`const hoge = (state, action) => {`  
+	`switch (action.type) {`  
+	`case'CREATE_HOGE':`  
+	`その時に実行される処理を記述~`  
+	`default: どれケースにも当てはまらないときの処理`  
+	`}}`
 
 
 
