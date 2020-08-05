@@ -56,3 +56,4 @@ srcの中にreducersというフォルダを作成
 `const result = window.confirm('注意書き')`  
 と記述することで削除の前にワンクッション作れる(**めっちゃ便利**)  
 
+### App.jsからstate={state}のように渡すときはcomponet側でもpropsの部分で{}でくくることが必要
