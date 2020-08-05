@@ -17,7 +17,7 @@ srcの中にreducersというフォルダを作成
 	});  
 
 ## reducerについて
-#####基本的な書き方  
+##### 基本的な書き方  
 	const hoge = (state, action) => {  
 	switch (action.type) {  
 	case'CREATE_HOGE':  
