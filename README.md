@@ -14,7 +14,7 @@ srcの中にreducersというフォルダを作成
 	type: CREATE_HOGE,  
 	title,  
 	body  
-	});  
+	})  
 
 ## reducerについて
 ##### 基本的な書き方  
