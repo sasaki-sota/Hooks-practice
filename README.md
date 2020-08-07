@@ -75,4 +75,7 @@ App.js `<AppContext.Provider value={}>`のようになる
 ## Hooksでの書き方
 **useContextの利用**  
 `const value = useContext(AppContext);`と使用するcontextを記述するだけでいい  
+### contextを利用することで格段に渡しやすくなる！  
+`<AppContext.Provider value={{ state, dispatch}}>`と記述することで必要な部分で利用することができるようになる  
+受け取る側では`const {state, dispatch} = useContext(AppContext);`と記述することで**propsから受け取らなくなる**  
 
