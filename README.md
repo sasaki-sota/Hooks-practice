@@ -23,7 +23,11 @@ srcの中にreducersというフォルダを作成
 	case'CREATE_HOGE':  
 	その時に実行される処理を記述~  
 	default: どれケースにも当てはまらないときの処理  
-	}}
+	}}  
+また、アクションを定義するときは
+**`const DELETE_EVENT = 'DELETE_EVENT';`**とすることで  
+エラーをコンパイルしたときに防ぐことができる  
+###### actionsファイルを作成して移植しておくことで管理しやすくする
 ### actionの中身
 	action = {  
 	type: ここでswitch文で利用するタイプを記述する必要がある  
