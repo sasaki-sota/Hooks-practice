@@ -1,7 +1,7 @@
 # useReducerについて
 srcの中にreducersというフォルダを作成  
 **useReducerを使用するファイルで`import reducer from './reducer/~'`と記述しておきインポートしておく**  
-###記述方法
+### 記述方法
 `const [state, dispatch] = useReducer(reducer, initialArg, init);`  
 第一引数にreducerを渡す  
 第二引数にデフォルトの状態をどうしたいのか？  
