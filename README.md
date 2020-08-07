@@ -62,6 +62,17 @@ srcの中にreducersというフォルダを作成
 
 #### App.jsからstate={state}のように渡すときはcomponet側でもpropsの部分で{}でくくることが必要
 
-## contextについて
+## contextについて(Hooks前)
 **データの送受信の際に使うコンポーネント**  
+### 基本的な書き方(親)
+App.js `<AppContext.Provider value={}>`のようになる  
+### 受け取る側の書き方(子)  
+		    <AppContext.Consumer>
+	                {value => { return <div>{value}</div>}}
+	            </AppContext.Consumer>  
+
+
+## Hooksでの書き方
+**useContextの利用**  
+`const value = useContext(AppContext);`と使用するcontextを記述するだけでいい  
 
