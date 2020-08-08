@@ -32,6 +32,7 @@ srcの中にreducersというフォルダを作成
 	action = {  
 	type: ここでswitch文で利用するタイプを記述する必要がある  
 	}  
+**アクション処理の定義を記述するものである**
 
 ## mapメソッド
 	state.map((event, index) => (
@@ -85,4 +86,5 @@ App.js `<AppContext.Provider value={}>`のようになる
 	import events from "./events";
 	export default combineReducers({events});  
 これでeventsのreducerの作成をすることができるようになる  
-**構造としてオブジェクトになる**
+**構造としてオブジェクトになる**  
+reducerを作成したらreducer/index.jsでrootログとして設定することが多い  
