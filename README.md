@@ -79,3 +79,10 @@ App.js `<AppContext.Provider value={}>`のようになる
 `<AppContext.Provider value={{ state, dispatch}}>`と記述することで必要な部分で利用することができるようになる  
 受け取る側では`const {state, dispatch} = useContext(AppContext);`と記述することで**propsから受け取らなくなる**  
 
+# reduxの使用  
+### combineReducersについて
+	import {combineReducers} from "redux";
+	import events from "./events";
+	export default combineReducers({events});  
+これでeventsのreducerの作成をすることができるようになる  
+**構造としてオブジェクトになる**
