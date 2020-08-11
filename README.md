@@ -88,3 +88,4 @@ App.js `<AppContext.Provider value={}>`のようになる
 これでeventsのreducerの作成をすることができるようになる  
 **構造としてオブジェクトになる**  
 reducerを作成したらreducer/index.jsでrootログとして設定することが多い  
+ログの設定をしたら確認することが大切
